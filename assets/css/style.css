@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI",Arial,sans-serif;
+}
+
+.container {
+  display: grid;
+  grid-template-rows: 100px minmax(calc(100vh - 170px), 1fr) 50px;
+  gap: 10px;
+}
+
+.container main {
+  grid-row: 1 / -1;
+}
+
+.hero-image {
+  position: relative;
+}
+
+.hero-image img {
+  width: 100%;
+}
+
+.hero-image div {
+  position: absolute;
+  bottom: 74px;
+  left: 0;
+  /* height: 100px; */
+  background: rgba(255, 193, 7, 0.7);
+  width: 70%;
+  padding: 10px 15px;
+  height: 111px;
+}
+
+.hero-image div p {
+  width: 100%;
+  font-size: 30px;
+  line-height: 45px;
+  font-weight: 700;
+}
+
+.main-contant {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 32px;
+  row-gap: 50px;
+  padding: 47px 32px;
+}
+
+.main-contant img {
+  width: 100%;
+}
+
+.main-contant article {
+  position: relative;
+}
+
+.main-contant article::before {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  height: 6px;
+  background: rgba(255, 193, 7, 1);
+  content: '';
+}
+
+.main-contant article:nth-child(n+3):before {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  height: 6px;
+  background: rgb(255, 152, 0);
+  content: '';
+}
+
+.main-contant article h2 {
+  font-size: 30px;
+  line-height: 60px;
+  margin-bottom: 10px;
+  font-family: "Segoe UI",Arial,sans-serif;
+}
+
+.main-contant article p {
+  font-size: 15px;
+  margin: 10px 0;
+  font-family: Verdana,sans-serif;
+}
