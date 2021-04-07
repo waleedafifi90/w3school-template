@@ -39,6 +39,10 @@ body {
   height: 111px;
 }
 
+.hero-image div:hover {
+  background: rgba(255, 152, 0, 0.7);
+}
+
 .hero-image div p {
   width: 100%;
   font-size: 30px;
