@@ -8,6 +8,7 @@
 
 body {
   font-family: "Segoe UI",Arial,sans-serif;
+  font-size: 15px;
 }
 
 .container {
@@ -45,7 +46,7 @@ body {
 
 .hero-image div p {
   width: 100%;
-  font-size: 30px;
+  font-size: 2em;
   line-height: 45px;
   font-weight: 700;
 }
@@ -85,14 +86,33 @@ body {
 }
 
 .main-contant article h2 {
-  font-size: 30px;
+  font-size: 2em;
   line-height: 60px;
   margin-bottom: 10px;
   font-family: "Segoe UI",Arial,sans-serif;
 }
 
 .main-contant article p {
-  font-size: 15px;
+  font-size: 1em;
   margin: 10px 0;
   font-family: Verdana,sans-serif;
+}
+
+@media screen and (max-width: 600px){
+  .main-contant {
+    grid-template-columns: 1fr;
+    row-gap: 20px;
+  }
+
+  .hero-image div {
+    bottom: 20px;
+  }
+
+  .hero-image div p {
+    font-size: 6vw;
+  }
+
+  .main-contant article h2 {
+    font-size: 8vw;
+  }
 }
